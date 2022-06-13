@@ -158,6 +158,8 @@ void watch_sleep_handle_get(struct watch_sleep *p)
 static int spo2_algo_enable(void)
 {
     printf("%s",__func__);
+
+     printf("1111111111111111111111");
     u8 search_spo2sensor;
     hr_sensor_io_ctl(HR_SEARCH_SENSOR, &search_spo2sensor);
     if (search_spo2sensor == 0) {
